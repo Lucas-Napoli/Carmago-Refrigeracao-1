@@ -14,7 +14,7 @@ const Footer = () => {
                 <Snowflake className="w-6 h-6 text-foreground" />
               </div>
               <span className="text-xl font-bold">
-                Camargo<span className="text-primary">Refrigeração</span>
+                Camargo<span className="text-primary"> Refrigeração</span>
               </span>
             </a>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">

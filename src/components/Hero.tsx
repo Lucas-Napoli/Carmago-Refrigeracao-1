@@ -53,7 +53,7 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" asChild>
-                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5515997337190" target="_blank" rel="noopener noreferrer">
                   <Phone className="w-5 h-5" />
                   Solicitar Orçamento
                   <ArrowRight className="w-5 h-5" />

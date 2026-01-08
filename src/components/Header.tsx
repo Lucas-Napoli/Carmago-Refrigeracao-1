@@ -23,7 +23,7 @@ const Header = () => {
               <Snowflake className="w-6 h-6 text-primary-foreground" />
             </div>
             <span className="text-xl font-bold text-foreground">
-              Camargo<span className="text-primary">Refrigeração</span>
+              Camargo<span className="text-primary"> Refrigeração</span>
             </span>
           </a>
 
