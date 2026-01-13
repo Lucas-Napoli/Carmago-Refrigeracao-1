@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -42,12 +42,25 @@
     --frost: 200 30% 97%;
     --cool-gray: 210 20% 60%;
     --success: 145 65% 42%;
-    
+
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(205 85% 45%) 0%, hsl(200 90% 55%) 50%, hsl(195 85% 60%) 100%);
-    --gradient-frost: linear-gradient(180deg, hsl(200 80% 95%) 0%, hsl(0 0% 100%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 25% 98%) 100%);
-    
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(205 85% 45%) 0%,
+      hsl(200 90% 55%) 50%,
+      hsl(195 85% 60%) 100%
+    );
+    --gradient-frost: linear-gradient(
+      180deg,
+      hsl(200 80% 95%) 0%,
+      hsl(0 0% 100%) 100%
+    );
+    --gradient-card: linear-gradient(
+      145deg,
+      hsl(0 0% 100%) 0%,
+      hsl(210 25% 98%) 100%
+    );
+
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(210 40% 12% / 0.08);
     --shadow-card: 0 8px 30px -8px hsl(210 40% 12% / 0.12);
@@ -97,7 +110,7 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
   }
 }
 
@@ -105,35 +118,57 @@
   .gradient-hero {
     background: var(--gradient-hero);
   }
-  
+
   .gradient-frost {
     background: var(--gradient-frost);
   }
-  
+
   .gradient-card {
     background: var(--gradient-card);
   }
-  
+
   .shadow-soft {
     box-shadow: var(--shadow-soft);
   }
-  
+
   .shadow-card {
     box-shadow: var(--shadow-card);
   }
-  
+
   .shadow-button {
     box-shadow: var(--shadow-button);
   }
-  
+
   .shadow-accent {
     box-shadow: var(--shadow-accent);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, hsl(205 85% 45%) 0%, hsl(200 90% 55%) 50%, hsl(195 85% 60%) 100%);
+    background: linear-gradient(
+      135deg,
+      hsl(205 85% 45%) 0%,
+      hsl(200 90% 55%) 50%,
+      hsl(195 85% 60%) 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+
+  .animate-scroll:hover {
+    animation-play-state: paused;
   }
 }

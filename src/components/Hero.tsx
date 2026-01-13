@@ -13,7 +13,7 @@ const Hero = () => {
     <section className="relative min-h-screen pt-20 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 gradient-frost" />
-      
+
       {/* Decorative elements */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
@@ -39,30 +39,31 @@ const Hero = () => {
               </motion.div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground leading-tight">
-                Conserto de{" "}
-                <span className="text-gradient">Geladeiras</span> e{" "}
+                Conserto de <span className="text-gradient">Geladeiras</span> e{" "}
                 <span className="text-gradient">Freezers</span>
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
-                Técnicos especializados com mais de 15 anos de experiência. 
-                Atendemos todas as marcas com peças originais e garantia.
+                Técnicos especializados com mais de 15 anos de experiência.
+                Atendemos todas as marcas com peças que possuem garantia.
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" asChild>
-                <a href="https://wa.me/5515997337190" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://wa.me/5515997337190"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Phone className="w-5 h-5" />
                   Solicitar Orçamento
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
               <Button variant="outline" size="xl" asChild>
-                <a href="#servicos">
-                  Ver Serviços
-                </a>
+                <a href="#servicos">Ver Serviços</a>
               </Button>
             </div>
 
@@ -80,7 +81,9 @@ const Hero = () => {
                     <stat.icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">{stat.label}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {stat.label}
+                    </p>
                     <p className="font-bold text-foreground">{stat.value}</p>
                   </div>
                 </motion.div>
@@ -119,7 +122,9 @@ const Hero = () => {
                   </div>
                   <div>
                     <p className="text-2xl font-bold text-foreground">+5.000</p>
-                    <p className="text-sm text-muted-foreground">Clientes satisfeitos</p>
+                    <p className="text-sm text-muted-foreground">
+                      Clientes satisfeitos
+                    </p>
                   </div>
                 </div>
               </motion.div>

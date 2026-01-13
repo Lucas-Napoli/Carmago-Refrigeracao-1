@@ -1,44 +1,42 @@
 import { motion } from "framer-motion";
 import {
-  Snowflake,
-  Thermometer,
-  Wrench,
+  Shirt,
+  Droplets,
+  UtensilsCrossed,
   Flame,
-  Zap,
   CheckCircle,
   MessageCircle,
 } from "lucide-react";
 import { Button } from "./ui/button";
 
-const Services = () => {
+const ApplianceServices = () => {
   const services = [
     {
-      icon: Snowflake,
-      title: "Geladeiras",
+      icon: Shirt,
+      title: "Máquinas de Lavar",
       description:
-        "Conserto de todos os modelos e marcas de geladeiras residenciais e comerciais.",
-      items: ["Frost Free", "Duplex", "Side by Side", "Inverter"],
+        "Conserto especializado em lavadoras de todas as marcas e capacidades.",
+      items: ["Automáticas", "Semi-automáticas", "Tanquinho", "Industrial"],
     },
     {
-      icon: Thermometer,
-      title: "Freezers",
+      icon: Droplets,
+      title: "Lava e Seca",
       description:
-        "Manutenção completa em freezers verticais e horizontais de qualquer marca.",
-      items: ["Vertical", "Horizontal", "Comercial", "Industrial"],
+        "Manutenção completa em máquinas lava e seca com tecnologia avançada.",
+      items: ["Inverter", "Smart", "Compactas", "Alta Capacidade"],
     },
     {
-      icon: Wrench,
-      title: "Refrigeradores",
+      icon: UtensilsCrossed,
+      title: "Lava-Louças",
       description:
-        "Reparo especializado em refrigeradores comerciais e expositores.",
-      items: ["Expositores", "Balcões", "Vitrines", "Câmaras Frias"],
+        "Reparo em lava-louças de embutir e de piso de qualquer marca.",
+      items: ["Embutir", "Piso", "Compactas", "8 a 14 Serviços"],
     },
     {
-      icon: Zap,
-      title: "Manutenção Preventiva",
-      description:
-        "Serviço de manutenção preventiva para evitar problemas futuros.",
-      items: ["Limpeza", "Recarga de Gás", "Troca de Peças", "Revisão Geral"],
+      icon: Flame,
+      title: "Fornos Elétricos",
+      description: "Conserto de fornos elétricos de embutir e de bancada.",
+      items: ["Embutir", "Bancada", "Micro-ondas", "Air Fryer"],
     },
   ];
 
@@ -57,7 +55,7 @@ const Services = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const whatsappNumber = "5515997337190";
+  const whatsappNumber = "5515997688655";
 
   const handleWhatsApp = (serviceName: string) => {
     const message = encodeURIComponent(
@@ -67,7 +65,7 @@ const Services = () => {
   };
 
   return (
-    <section id="servicos" className="py-20 md:py-28 bg-background">
+    <section id="eletrodomesticos" className="py-20 md:py-28 bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div
@@ -76,16 +74,15 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-4">
-            Nossos Serviços
+          <span className="inline-block px-4 py-2 rounded-full bg-accent/10 text-accent font-semibold text-sm mb-4">
+            Linha Branca
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Soluções Completas em{" "}
-            <span className="text-gradient">Refrigeração</span>
+            Conserto de <span className="text-gradient">Eletrodomésticos</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Trabalhamos com todas as marcas e modelos do mercado, sempre
-            utilizando peças com garantia de serviço.
+            Também realizamos manutenção em máquinas de lavar, lava e seca,
+            lava-louças e fornos elétricos de todas as marcas.
           </p>
         </motion.div>
 
@@ -104,7 +101,7 @@ const Services = () => {
               className="group relative bg-card rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 border border-border hover:border-accent/20 flex flex-col"
             >
               {/* Icon */}
-              <div className="w-14 h-14 rounded-xl gradient-hero from-accent to-accent/80 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent to-accent/80 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                 <service.icon className="w-7 h-7 text-accent-foreground" />
               </div>
 
@@ -148,4 +145,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ApplianceServices;

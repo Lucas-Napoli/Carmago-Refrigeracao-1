@@ -7,7 +7,7 @@ const CTA = () => {
     <section id="contato" className="py-20 md:py-28 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 gradient-hero" />
-      
+
       {/* Decorative */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
@@ -23,13 +23,18 @@ const CTA = () => {
             Sua Geladeira com Problema?
           </h2>
           <p className="text-primary-foreground/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-            Não deixe para depois! Entre em contato agora e agende uma visita técnica. 
-            Orçamento sem compromisso.
+            Não deixe para depois! Entre em contato agora e agende uma visita
+            técnica. Orçamento com análise detalhada para definir o orçamento
+            ideal para cada caso.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="xl" asChild>
-              <a href="https://wa.me/5515997337190" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://wa.me/5515997337190"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <MessageCircle className="w-5 h-5" />
                 Chamar no WhatsApp
                 <ArrowRight className="w-5 h-5" />
@@ -57,7 +62,7 @@ const CTA = () => {
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-success" />
-              Orçamento Grátis
+              Orçamento de acordo com a necessidade
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-success" />

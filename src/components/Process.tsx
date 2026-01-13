@@ -7,25 +7,29 @@ const Process = () => {
       icon: MessageCircle,
       step: "01",
       title: "Entre em Contato",
-      description: "Fale conosco pelo WhatsApp ou telefone e descreva o problema do seu equipamento.",
+      description:
+        "Fale conosco pelo WhatsApp ou telefone e descreva o problema do seu equipamento.",
     },
     {
       icon: Calendar,
       step: "02",
       title: "Agendamento",
-      description: "Escolha o melhor dia e horário para a visita técnica. Atendemos de segunda a sábado.",
+      description:
+        "Escolha o melhor dia e horário para a visita técnica. Atendemos de segunda a sábado.",
     },
     {
       icon: Wrench,
       step: "03",
       title: "Diagnóstico e Reparo",
-      description: "Nosso técnico avalia o equipamento, apresenta o orçamento e realiza o conserto.",
+      description:
+        "Nosso técnico avalia o equipamento, apresenta o orçamento e realiza o conserto.",
     },
     {
       icon: CheckCircle,
       step: "04",
       title: "Garantia",
-      description: "Após o serviço, você recebe garantia de 90 dias em peças e mão de obra.",
+      description:
+        "Após o serviço, você recebe garantia de 90 dias em peças e mão de obra.",
     },
   ];
 
@@ -46,7 +50,8 @@ const Process = () => {
             Simples e <span className="text-gradient">Rápido</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Processo descomplicado para você ter seu equipamento funcionando o mais rápido possível.
+            Processo descomplicado para você ter seu equipamento funcionando o
+            mais rápido possível.
           </p>
         </motion.div>
 

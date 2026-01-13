@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { Shield, Clock, Award, Banknote, Users, Headphones } from "lucide-react";
+import {
+  Shield,
+  Clock,
+  Award,
+  Banknote,
+  Users,
+  Headphones,
+} from "lucide-react";
 
 const Benefits = () => {
   const benefits = [
@@ -11,22 +18,26 @@ const Benefits = () => {
     {
       icon: Shield,
       title: "Garantia de 90 Dias",
-      description: "Todos os serviços com garantia de 3 meses nas peças e mão de obra.",
+      description:
+        "Todos os serviços com garantia de 3 meses nas peças e mão de obra.",
     },
     {
       icon: Award,
       title: "Técnicos Certificados",
-      description: "Profissionais com mais de 15 anos de experiência comprovada.",
+      description:
+        "Profissionais com mais de 15 anos de experiência comprovada.",
     },
     {
       icon: Banknote,
-      title: "Orçamento Grátis",
-      description: "Avaliação e diagnóstico sem compromisso e sem custos.",
+      title: "Orçamento de acordo com a necessidade",
+      description:
+        "Análise detalhada para definir o orçamento ideal para cada caso.",
     },
     {
       icon: Users,
       title: "Todas as Marcas",
-      description: "Atendemos Brastemp, Electrolux, Consul, LG, Samsung e mais.",
+      description:
+        "Atendemos Brastemp, Electrolux, Consul, LG, Samsung e mais.",
     },
     {
       icon: Headphones,
@@ -52,8 +63,8 @@ const Benefits = () => {
             Confiança e <span className="text-gradient">Qualidade</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Mais de 5.000 clientes satisfeitos em toda a região. 
-            Qualidade e compromisso que você pode confiar.
+            Mais de 5.000 clientes satisfeitos em toda a região. Qualidade e
+            compromisso que você pode confiar.
           </p>
         </motion.div>
 
